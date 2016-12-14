@@ -1,0 +1,779 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*--Colors
+
+Red Orange: #ff3333;
+Light Greyish Pink: #f4f2f3;
+Sea Green: #2e8b57;
+Bittersweet: #ff6666;
+Very Dark Cyan-Lime Green: #1a5032;
+
+Fonts
+font-family: 'Abhaya Libre', serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'PT Serif', serif;
+font-family: 'Raleway', sans-serif;
+--*/
+
+
+/*Global Styles*/
+
+html {
+    height: 100%;
+    background-color: #f4f2f3;
+}
+
+body {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight:  400;
+    font-size: 1em;
+    height: 100%;
+          /* NEW: IE11, Chrome 29+, Opera 12.1+, Firefox 22+ */
+  }
+
+h2 {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+h3 {
+  color: #ff3333;
+  font-size: 1em;
+  font-weight: 400;
+  padding-top: 10px;
+  margin: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+p {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.selected {
+  color: #2E8B57;
+}
+
+/*Layout*/
+main {
+  min-height: 100%;
+  margin: 0 2%;
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+
+}
+
+header {
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2%;
+}
+
+/*Cover Page*/
+.cover-page {
+    height: 100%;
+    justify-content: center;
+}
+
+.border {
+    border-bottom: 2px solid pink;
+}
+
+.my-name {
+  color: #ff6666;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  margin: 0;
+}
+
+    .home-link {
+      color: #ff6666;
+    }
+
+#job-title {
+  font-size: .5em;
+  margin: 5px 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+ul.cover-nav {
+  margin: 0;
+  display: flex;
+}
+
+    li {
+      font-size: .5em;
+      display: inline;
+      padding: 0 6px;
+    }
+        li.desktop-nav {
+          display: none;
+        }
+
+        li a:hover {
+          color: #2E8B57;
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          z-index: 100;
+        }
+
+        .dropdown-content a {
+          text-decoration: none;
+          color: black;
+          display: block;
+          padding-top: 6px;
+        }
+
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+
+/*Services*/
+
+header.details-page {
+  margin-top: 2%;
+  border-bottom: 2px solid pink;
+}
+
+.my-name.details {
+  font-size: .5em;
+}
+
+ul.nav-bar {
+  padding-bottom: 0;
+  margin: 0;
+}
+
+    .dropdown.details {
+      padding-bottom: 20px;
+    }
+    .dropdown-content.details {
+      background-color: #f4f2f3;
+      padding: 0 73px 10px 6px;
+      box-shadow: 4px 4px 0 #DADADA;
+    }
+
+.flex-1,
+.flex-2,
+.flex-3,
+.flex-4 {
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 0 1%;
+}
+
+.details-header {
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+}
+
+figure {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.flex-1 {
+  order: 2;
+}
+
+.flex-2 {
+  order: 3;
+}
+
+.flex-3 {
+  order: 4;
+}
+
+.flex-4 {
+  order: 5;
+}
+
+.flex-5 {
+  flex-basis: 100%;
+  order: 1;
+}
+
+.img-container {
+  width: 100%;
+  padding-bottom: 100%;
+  margin: 0;
+  border-bottom: 2px solid pink;
+  max-width: 960px;
+}
+
+#img-01 {
+  background: url('../img/books-clean.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#img-02 {
+  background: url('../img/lego.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#img-03 {
+  background: url('../img/me.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*Writing and Editing*/
+.coding-services-desktop {
+  display: none;
+}
+
+.editing-services-desktop {
+  display: flex;
+  flex-flow: column;
+}
+
+/*Coding Page*/
+.editing-services-desktop.code-page {
+  display: none;
+}
+
+.coding-services-desktop.code-page {
+  display: flex;
+  flex-flow: column;
+}
+
+/*About*/
+
+.my-photo {
+  max-width: 768px;
+  margin: 0;
+}
+
+/*Contact*/
+.contact-info {
+  line-height: 2em;
+  border-bottom: none;
+}
+
+.links {
+  margin: 0;
+}
+
+.fa.fa-envelope {
+  padding-right: 10px;
+}
+/*Footer*/
+
+footer {
+width: 100%;
+display: flex;
+justify-content: center;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media screen and (min-width: 768px) {
+     /*Tablet styles here!*/
+
+main {
+  flex-flow: row wrap;
+  min-height: inherit;
+  overflow: auto;
+}
+
+header {
+    font-size: 2.1em;
+  }
+
+/*Services*/
+p.editing.intro,
+p.intro.about {
+  max-width: 900px;
+  text-align: left;
+}
+
+p.intro.code {
+  text-align: center;
+}
+
+figure {
+  margin: auto;
+}
+
+.code-icon {
+  margin: 15px 10px;
+  padding: 0;
+}
+
+.flex-1 {
+  flex-basis: 100%;
+  align-items: flex-start;
+  margin: 30px 0;
+  order: 2
+}
+
+.flex-2 {
+  order: 3
+}
+
+.flex-3 {
+  order: 5
+}
+
+.flex-4 {
+  order: 4;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.flex-5 {
+  order: 1
+}
+
+/*Writing+Editing Flexbox*/
+.editing-services-desktop {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-2,
+.flex-3,
+.flex-4 {
+  flex:1;
+  margin: 0 1%;
+  border-bottom: none;
+  align-items: flex-start;
+}
+
+/*Coding Flexbox*/
+.coding-services-desktop.code-page {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-2.code,
+.flex-3.code,
+.flex-4.code {
+  flex:1;
+  margin: 0 1%;
+  border-bottom: none;
+  align-items: center;
+}
+
+/*About Flexbox*/
+
+.about-me.flex-1 {
+  border-bottom: none;
+}
+
+/*Contact Flexbox*/
+.contact-info.flex-1 {
+  align-items: center;
+}
+/*Footer*/
+
+footer {
+  height: 20%;
+  align-items: flex-end;
+}
+}
+
+
+/*End Tablet styles*/
+
+@media screen and (min-width: 940px) {
+       /*Desktop styles here!*/
+html.services-page {
+  background-image: url(../img/lego-cover.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+html.contact-page {
+  background-image: url(../img/books-cover.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+
+main {
+  overflow: auto;
+}
+
+h3 {
+  color: #1a5032;
+}
+
+/*Cover Page*/
+li.desktop-nav {
+  display: inline-block;
+}
+
+li.dropdown {
+  display: none;
+}
+
+
+/*Flexbox*/
+.coding-services-desktop {
+  display: flex;
+  order: 100;
+  flex-flow: wrap;
+  border-top: 2px solid pink;
+  margin-top: 30px;
+}
+
+.editing-services-desktop {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.editing-services-desktop.code-page {
+  display: flex;
+
+}
+
+.flex-5 {
+display: none;
+}
+
+.flex-1 {
+  flex: 100%;
+  margin-bottom: 30px;
+  border-bottom: 2px solid pink;
+  margin-top: 0;
+  align-items: center;
+}
+
+.flex-2,
+.flex-3,
+.flex-4 {
+  padding-bottom: 30px;
+  align-items: center;
+}
+
+p.intro.editing {
+  text-align: center;
+}
+
+.img-container {
+  width: 100%;
+  padding-bottom: 100%;
+  margin: 0;
+  border-bottom: 2px solid pink;
+  border-right: 2px solid pink;
+}
+
+
+.flex-1.code {
+  flex-basis: 100%;
+}
+
+/*About*/
+.flex-5.about {
+  display: flex;
+  flex: 40%;
+}
+
+.img-container.about {
+  padding-bottom: 80%;
+
+}
+
+.about-me.flex-1 {
+  flex: 50%;
+  min-width: inherit;
+  align-items: flex-start;
+}
+
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
