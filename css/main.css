@@ -346,14 +346,6 @@ text-align: center;
 
 
 
-
-
-
-
-
-
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -642,7 +634,19 @@ p.intro.editing.header {
   width: 100%;
 }
 
+/*end Desktop styles*/
 
+@media screen and (min-width: 1920px) {
+/*Large screen desktop styles*/
+
+body {
+  font-size: 1.2em;
+}
+
+.cover-page {
+  font-size: 2.2em;
+}
+}
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
