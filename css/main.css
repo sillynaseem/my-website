@@ -582,7 +582,12 @@ footer {
 
 html {
   max-width: 1000px;
-  margin: auto;
+  margin: 0 auto;
+}
+
+html.services-page,
+html.contact-page {
+  background-image: none;
 }
 
 body,
@@ -591,13 +596,11 @@ h2,
 h3,
 a {
   font-weight: 500;
+
 }
 
 
 /*Services*/
-html.services-page {
-background-size: cover;
-}
 
 p.intro.editing.header {
   width: 60%;
@@ -639,14 +642,7 @@ p.intro.editing.header {
   width: 100%;
 }
 
-/*Contact*/
-html.contact-page {
-background-position: top;
-background-image: url(../img/books-cover.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-height: 100%;
-}
+
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
