@@ -580,6 +580,20 @@ footer {
 @media screen and (min-width: 940px) {
        /*Desktop styles here!*/
 
+html {
+  max-width: 1000px;
+  margin: auto;
+}
+
+body,
+h1,
+h2,
+h3,
+a {
+  font-weight: 500;
+}
+
+
 /*Services*/
 html.services-page {
 background-size: cover;
